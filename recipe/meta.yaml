@@ -28,7 +28,7 @@ requirements:
 
 test:
   imports:
-    - boxsdk
+    - box_sdk_gen
   commands:
     - pip check
   requires:
