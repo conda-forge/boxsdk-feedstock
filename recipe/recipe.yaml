@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: boxsdk
-  version: "10.18.0"
+  version: "10.19.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/boxsdk-${{ version }}.tar.gz
-  sha256: 12a027b9de9e64fae3758f36a28582de01f51951c735a168f7f4d9b56e478614
+  sha256: 3ebbbc69e72dcee82ee7610284f4a0d0b6f23badbabc4775c0f5ee55a69984f5
 
 build:
   number: 0
