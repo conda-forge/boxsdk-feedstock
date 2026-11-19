@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: boxsdk
-  version: "10.19.0"
+  version: "10.20.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/boxsdk-${{ version }}.tar.gz
-  sha256: 3ebbbc69e72dcee82ee7610284f4a0d0b6f23badbabc4775c0f5ee55a69984f5
+  sha256: fe62752a2032a898f9a10d354e6a09182202a2a926e982c6c345705dc90c478d
 
 build:
   number: 0
@@ -25,7 +25,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - requests
-    - requests-toolbelt
+    - urllib3
 
 tests:
   - python:
